@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:template_name",
+ "creation": "2026-09-23 09:39:44.430480",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "template_name",
+  "1_technical_capability_section",
+  "table_toog",
+  "2_enterprise_software_and_implementation_section",
+  "table_oudw",
+  "3_development_quality_and_delivery_section",
+  "table_aikc",
+  "4_ownership_and_problem_solving_section",
+  "table_fnzt",
+  "5_collaboration_communication_and_client_exposure_section",
+  "table_ktfa",
+  "6_learning_documentation_and_growth_section",
+  "table_zntg",
+  "assessment_tab",
+  "assessment_questions"
+ ],
+ "fields": [
+  {
+   "fieldname": "template_name",
+   "fieldtype": "Data",
+   "label": "Template Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "1_technical_capability_section",
+   "fieldtype": "Section Break",
+   "label": "1. Role and Domain Capability"
+  },
+  {
+   "fieldname": "table_toog",
+   "fieldtype": "Table",
+   "options": "Performance Parameters"
+  },
+  {
+   "fieldname": "2_enterprise_software_and_implementation_section",
+   "fieldtype": "Section Break",
+   "label": "2. Solution and Implementation Capability "
+  },
+  {
+   "fieldname": "table_oudw",
+   "fieldtype": "Table",
+   "options": "Performance Parameters"
+  },
+  {
+   "fieldname": "3_development_quality_and_delivery_section",
+   "fieldtype": "Section Break",
+   "label": "3. Quality and Delivery"
+  },
+  {
+   "fieldname": "table_aikc",
+   "fieldtype": "Table",
+   "options": "Performance Parameters"
+  },
+  {
+   "fieldname": "4_ownership_and_problem_solving_section",
+   "fieldtype": "Section Break",
+   "label": "4. Ownership and Problem Solving"
+  },
+  {
+   "fieldname": "table_fnzt",
+   "fieldtype": "Table",
+   "options": "Performance Parameters"
+  },
+  {
+   "fieldname": "5_collaboration_communication_and_client_exposure_section",
+   "fieldtype": "Section Break",
+   "label": "5. Collaboration and Communication"
+  },
+  {
+   "fieldname": "table_ktfa",
+   "fieldtype": "Table",
+   "options": "Performance Parameters"
+  },
+  {
+   "fieldname": "6_learning_documentation_and_growth_section",
+   "fieldtype": "Section Break",
+   "label": "6. Learning, Documentation and Growth "
+  },
+  {
+   "fieldname": "table_zntg",
+   "fieldtype": "Table",
+   "options": "Performance Parameters"
+  },
+  {
+   "fieldname": "assessment_tab",
+   "fieldtype": "Tab Break",
+   "label": "Assessment"
+  },
+  {
+   "fieldname": "assessment_questions",
+   "fieldtype": "Table",
+   "label": "Assessment Questions'",
+   "options": "Manager Assessment Table"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-28 14:18:51.572475",
+ "modified_by": "Administrator",
+ "module": "Employee Performance",
+ "name": "Performance Evaluation Template",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "template_name",
+ "track_changes": 1
+}

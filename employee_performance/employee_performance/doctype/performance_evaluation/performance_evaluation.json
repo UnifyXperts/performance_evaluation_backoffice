@@ -1,0 +1,443 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PER-EVAL.-.###",
+ "creation": "2026-09-22 14:14:09.788241",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_details_tab",
+  "employee",
+  "employee_name",
+  "designation",
+  "reviewer",
+  "evaluation_template",
+  "column_break_hxwi",
+  "review_period_from",
+  "review_period_to",
+  "status",
+  "final_score",
+  "1_technical_capability_section",
+  "table_eoum",
+  "total_score_i",
+  "notes_i",
+  "2_enterprise_software_and_implementation_section",
+  "table_yans",
+  "total_score_ii",
+  "notes_ii",
+  "3_development_quality_and_delivery_section",
+  "table_dhbr",
+  "total_score_iii",
+  "notes_iii",
+  "4_ownership_and_problem_solving_section",
+  "table_zazv",
+  "total_score_iv",
+  "notes_iv",
+  "5_collaboration_communication_and_client_exposure_section",
+  "table_htwv",
+  "total_score_v",
+  "notes_v",
+  "6_learning_documentation_and_growth_section",
+  "table_piwa",
+  "total_score_vi",
+  "notes_vi",
+  "overall_score_section",
+  "employee_total_score",
+  "column_break_wozd",
+  "manager_average_score",
+  "tab_2_tab",
+  "reflection_section",
+  "text_editor_mxmn",
+  "manager_assessment_section",
+  "table_ovwz",
+  "section_break_zwbv",
+  "text_editor_nrcv",
+  "section_break_vzvx",
+  "text_editor_ulij",
+  "section_break_peqr",
+  "independence",
+  "section_break_npwx",
+  "functional_maturity",
+  "section_break_anoj",
+  "business_and_client_understanding",
+  "final_manager_recommendation_section",
+  "performance_band",
+  "overall_performance_rating",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "no_copy": 1,
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "no_copy": 1,
+   "options": "Designation"
+  },
+  {
+   "fieldname": "reviewer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reviewer",
+   "no_copy": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "evaluation_template",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Evaluation Template",
+   "no_copy": 1,
+   "options": "Performance Evaluation Template",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_hxwi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "review_period_from",
+   "fieldtype": "Date",
+   "label": "Review Period From",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "review_period_to",
+   "fieldtype": "Date",
+   "label": "Review Period To",
+   "no_copy": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "\nDraft\nUnder Review\nEvaluated",
+   "reqd": 1
+  },
+  {
+   "fieldname": "final_score",
+   "fieldtype": "Float",
+   "label": "Final Score",
+   "no_copy": 1,
+   "permlevel": 1
+  },
+  {
+   "fieldname": "1_technical_capability_section",
+   "fieldtype": "Section Break",
+   "label": "1. Role and Domain Capability"
+  },
+  {
+   "fieldname": "table_eoum",
+   "fieldtype": "Table",
+   "options": "Performance Parameters"
+  },
+  {
+   "fieldname": "total_score_i",
+   "fieldtype": "Float",
+   "label": "Total Average Score I",
+   "no_copy": 1,
+   "permlevel": 1
+  },
+  {
+   "fieldname": "notes_i",
+   "fieldtype": "Small Text",
+   "label": "Notes I",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "2_enterprise_software_and_implementation_section",
+   "fieldtype": "Section Break",
+   "label": "2. Solution and Implementation Capability"
+  },
+  {
+   "fieldname": "table_yans",
+   "fieldtype": "Table",
+   "options": "Performance Parameters"
+  },
+  {
+   "fieldname": "total_score_ii",
+   "fieldtype": "Float",
+   "label": "Total Average Score II",
+   "no_copy": 1,
+   "permlevel": 1
+  },
+  {
+   "fieldname": "notes_ii",
+   "fieldtype": "Small Text",
+   "label": "Notes II",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "3_development_quality_and_delivery_section",
+   "fieldtype": "Section Break",
+   "label": "3. Quality and Delivery"
+  },
+  {
+   "fieldname": "table_dhbr",
+   "fieldtype": "Table",
+   "options": "Performance Parameters"
+  },
+  {
+   "fieldname": "total_score_iii",
+   "fieldtype": "Float",
+   "label": "Total Average Score III",
+   "no_copy": 1,
+   "permlevel": 1
+  },
+  {
+   "fieldname": "notes_iii",
+   "fieldtype": "Small Text",
+   "label": "Notes III",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "4_ownership_and_problem_solving_section",
+   "fieldtype": "Section Break",
+   "label": "4. Ownership and Problem Solving"
+  },
+  {
+   "fieldname": "table_zazv",
+   "fieldtype": "Table",
+   "options": "Performance Parameters"
+  },
+  {
+   "fieldname": "total_score_iv",
+   "fieldtype": "Float",
+   "label": "Total Average Score IV",
+   "no_copy": 1,
+   "permlevel": 1
+  },
+  {
+   "fieldname": "notes_iv",
+   "fieldtype": "Small Text",
+   "label": "Notes IV",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "5_collaboration_communication_and_client_exposure_section",
+   "fieldtype": "Section Break",
+   "label": "5. Collaboration and Communication"
+  },
+  {
+   "fieldname": "table_htwv",
+   "fieldtype": "Table",
+   "options": "Performance Parameters"
+  },
+  {
+   "fieldname": "total_score_v",
+   "fieldtype": "Float",
+   "label": "Total Average Score V",
+   "no_copy": 1,
+   "permlevel": 1
+  },
+  {
+   "fieldname": "notes_v",
+   "fieldtype": "Small Text",
+   "label": "Notes V",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "6_learning_documentation_and_growth_section",
+   "fieldtype": "Section Break",
+   "label": "6. Learning, Documentation and Growth"
+  },
+  {
+   "fieldname": "table_piwa",
+   "fieldtype": "Table",
+   "options": "Performance Parameters"
+  },
+  {
+   "fieldname": "total_score_vi",
+   "fieldtype": "Float",
+   "label": "Total Average Score VI",
+   "no_copy": 1,
+   "permlevel": 1
+  },
+  {
+   "fieldname": "notes_vi",
+   "fieldtype": "Small Text",
+   "label": "Notes VI",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "overall_score_section",
+   "fieldtype": "Section Break",
+   "label": "Overall Score"
+  },
+  {
+   "fieldname": "employee_total_score",
+   "fieldtype": "Float",
+   "label": "Employee Total Average Score",
+   "no_copy": 1,
+   "permlevel": 1
+  },
+  {
+   "fieldname": "column_break_wozd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "manager_average_score",
+   "fieldtype": "Float",
+   "label": "Manager Total Average Score",
+   "no_copy": 1,
+   "permlevel": 1
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Assessment"
+  },
+  {
+   "fieldname": "reflection_section",
+   "fieldtype": "Section Break",
+   "label": "Reflection"
+  },
+  {
+   "fieldname": "text_editor_mxmn",
+   "fieldtype": "Text Editor"
+  },
+  {
+   "fieldname": "manager_assessment_section",
+   "fieldtype": "Section Break",
+   "label": "Manager Assessment"
+  },
+  {
+   "fieldname": "table_ovwz",
+   "fieldtype": "Table",
+   "options": "Manager Assessment Table"
+  },
+  {
+   "fieldname": "final_manager_recommendation_section",
+   "fieldtype": "Section Break",
+   "label": "Final Manager Recommendation\u202f "
+  },
+  {
+   "fieldname": "performance_band",
+   "fieldtype": "Select",
+   "label": "Performance Band",
+   "options": "\nExceptional\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nUnsatisfactory"
+  },
+  {
+   "fieldname": "overall_performance_rating",
+   "fieldtype": "Float",
+   "label": "Overall Performance Rating",
+   "no_copy": 1,
+   "permlevel": 1,
+   "placeholder": "Out Of 5"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Performance Evaluation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "description": "How would you describe the employee's current level of independence?",
+   "fieldname": "section_break_peqr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "independence",
+   "fieldtype": "Select",
+   "options": "\n1. Requires close supervision\n2. Requires regular guidance\n3. Generally independent\n4. Highly independent\n5. Can independently handle complex work and guide others"
+  },
+  {
+   "description": "At the employee's current level, are they demonstrating the functional or Technical capability expected of their role?",
+   "fieldname": "section_break_npwx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "functional_maturity",
+   "fieldtype": "Select",
+   "label": "Functional or Technical Maturity",
+   "options": "\n1. Below expectations\n2. Developing\n3. Meets expectations\n4. Above expectations\n5. Significantly above expectations"
+  },
+  {
+   "description": "How well does the employee understand the business problem and translate it into an appropriate ERP solution?",
+   "fieldname": "section_break_anoj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "business_and_client_understanding",
+   "fieldtype": "Select",
+   "label": "Business Understanding",
+   "options": "\n1. Limited\n2. Developing\n3. Good\n4. Very good\n5. Excellent"
+  },
+  {
+   "description": "What is the employee's 2\u20133 strongest qualities/contributions during this review period?",
+   "fieldname": "section_break_zwbv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "text_editor_nrcv",
+   "fieldtype": "Text Editor"
+  },
+  {
+   "description": "What are the 2\u20133 most important areas the employee needs to improve?",
+   "fieldname": "section_break_vzvx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "text_editor_ulij",
+   "fieldtype": "Text Editor"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-28 16:27:48.403356",
+ "modified_by": "Administrator",
+ "module": "Employee Performance",
+ "name": "Performance Evaluation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
